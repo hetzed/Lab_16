@@ -43,6 +43,7 @@ int main()
    cout << "The circumference of the circle is "
 	    << sphere.findCircumference() << endl;
 
+   system("pause");
    return 0;
 }
 
@@ -58,7 +59,7 @@ CircleShape::CircleShape()
 // Fill in the code to implement the non-default constructor
 CircleShape::CircleShape(float r)
 {
-   radius = 1.0;
+   radius = r;
    setCenter(0, 0);
 }
 
@@ -66,7 +67,7 @@ CircleShape::CircleShape(float r)
 // Fill in the code to implement the findArea member function
 double CircleShape::findArea()
 {
-	return PI * radius * 2;
+	return PI * radius * radius;
 }
 
 // Fill in the code to implement the findCircumference member function
