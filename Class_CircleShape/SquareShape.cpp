@@ -48,3 +48,11 @@ float SquareShape::fPerimeter()
 	return 4 * side;
 }
 
+/*
+TEST CODE RESULTS:
+Enter the length of the side of the square
+5
+Area of the square is 25
+Perimeter of the square is 20
+Press any key to continue . . .
+*/
