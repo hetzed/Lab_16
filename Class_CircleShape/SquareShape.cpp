@@ -1,7 +1,7 @@
 /*
 Author: Felipe D Quinones | 106148
 History:
-12/ 02 / 2017 - File created.[FQS]
+12/ 09/ 2017 - File created.[FQS]
 */
 
 #include <iostream>
@@ -12,12 +12,12 @@ class SquareShape {
 
 public:
 	void setSide(float);
-	float findArea();
-	float findPerimeter();
+	float fArea();
+	float fPerimeter();
 
 };
 
-int main{
+int main() {
 	SquareShape box; //box es definido como un objeto del class SquareShape
 	float size;
 
@@ -26,11 +26,25 @@ int main{
 
 	box.setSide(size);
 
-	cout << "Area of the square is " << box.findArea() << endl;
+	cout << "Area of the square is " << box.fArea() << endl;
+	cout << "Perimeter of the square is " << box.fPerimeter() << endl;
 
-	cout << "Perimeter of the square is " << box.findPerimeter() << endl;
-
+	system("pause");
 	return 0;
+}
 
+void SquareShape::setSide(float length)
+{
+	side = length;
+}
+
+float SquareShape::fArea()
+{
+	return side * side;
+}
+
+float SquareShape::fPerimeter()
+{
+	return 4 * side;
 }
 
